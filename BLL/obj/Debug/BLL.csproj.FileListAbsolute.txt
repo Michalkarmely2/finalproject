@@ -1,0 +1,50 @@
+D:\C#\FinalProject\BLL\bin\Debug\BLL.dll
+D:\C#\FinalProject\BLL\bin\Debug\BLL.pdb
+D:\C#\FinalProject\BLL\bin\Debug\DAL.dll
+D:\C#\FinalProject\BLL\bin\Debug\DTO.dll
+D:\C#\FinalProject\BLL\bin\Debug\EntityFramework.dll
+D:\C#\FinalProject\BLL\bin\Debug\DAL.pdb
+D:\C#\FinalProject\BLL\bin\Debug\DAL.dll.config
+D:\C#\FinalProject\BLL\bin\Debug\DTO.pdb
+D:\C#\FinalProject\BLL\bin\Debug\EntityFramework.xml
+D:\C#\FinalProject\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\C#\FinalProject\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\C#\FinalProject\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\C#\FinalProject\BLL\obj\Debug\BLL.dll
+D:\C#\FinalProject\BLL\obj\Debug\BLL.pdb
+M:\מיכל כרמלי\FinalProject\BLL\bin\Debug\BLL.dll.config
+M:\מיכל כרמלי\FinalProject\BLL\bin\Debug\BLL.dll
+M:\מיכל כרמלי\FinalProject\BLL\bin\Debug\BLL.pdb
+M:\מיכל כרמלי\FinalProject\BLL\bin\Debug\DAL.dll
+M:\מיכל כרמלי\FinalProject\BLL\bin\Debug\DTO.dll
+M:\מיכל כרמלי\FinalProject\BLL\bin\Debug\EntityFramework.dll
+M:\מיכל כרמלי\FinalProject\BLL\bin\Debug\EntityFramework.SqlServer.dll
+M:\מיכל כרמלי\FinalProject\BLL\bin\Debug\DAL.pdb
+M:\מיכל כרמלי\FinalProject\BLL\bin\Debug\DAL.dll.config
+M:\מיכל כרמלי\FinalProject\BLL\bin\Debug\DTO.pdb
+M:\מיכל כרמלי\FinalProject\BLL\bin\Debug\DTO.dll.config
+M:\מיכל כרמלי\FinalProject\BLL\bin\Debug\EntityFramework.xml
+M:\מיכל כרמלי\FinalProject\BLL\bin\Debug\EntityFramework.SqlServer.xml
+M:\מיכל כרמלי\FinalProject\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+M:\מיכל כרמלי\FinalProject\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+M:\מיכל כרמלי\FinalProject\BLL\obj\Debug\BLL.csproj.CopyComplete
+M:\מיכל כרמלי\FinalProject\BLL\obj\Debug\BLL.dll
+M:\מיכל כרמלי\FinalProject\BLL\obj\Debug\BLL.pdb
+M:\מיכל כרמלי וצביה אסולין\FinalProject\BLL\bin\Debug\BLL.dll.config
+M:\מיכל כרמלי וצביה אסולין\FinalProject\BLL\bin\Debug\BLL.dll
+M:\מיכל כרמלי וצביה אסולין\FinalProject\BLL\bin\Debug\BLL.pdb
+M:\מיכל כרמלי וצביה אסולין\FinalProject\BLL\bin\Debug\DAL.dll
+M:\מיכל כרמלי וצביה אסולין\FinalProject\BLL\bin\Debug\DTO.dll
+M:\מיכל כרמלי וצביה אסולין\FinalProject\BLL\bin\Debug\EntityFramework.dll
+M:\מיכל כרמלי וצביה אסולין\FinalProject\BLL\bin\Debug\EntityFramework.SqlServer.dll
+M:\מיכל כרמלי וצביה אסולין\FinalProject\BLL\bin\Debug\DAL.pdb
+M:\מיכל כרמלי וצביה אסולין\FinalProject\BLL\bin\Debug\DAL.dll.config
+M:\מיכל כרמלי וצביה אסולין\FinalProject\BLL\bin\Debug\DTO.pdb
+M:\מיכל כרמלי וצביה אסולין\FinalProject\BLL\bin\Debug\DTO.dll.config
+M:\מיכל כרמלי וצביה אסולין\FinalProject\BLL\bin\Debug\EntityFramework.xml
+M:\מיכל כרמלי וצביה אסולין\FinalProject\BLL\bin\Debug\EntityFramework.SqlServer.xml
+M:\מיכל כרמלי וצביה אסולין\FinalProject\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+M:\מיכל כרמלי וצביה אסולין\FinalProject\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+M:\מיכל כרמלי וצביה אסולין\FinalProject\BLL\obj\Debug\BLL.csproj.CopyComplete
+M:\מיכל כרמלי וצביה אסולין\FinalProject\BLL\obj\Debug\BLL.dll
+M:\מיכל כרמלי וצביה אסולין\FinalProject\BLL\obj\Debug\BLL.pdb
