@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HelpForElderlyModelStoreContainer" CdmEntityContainer="HelpForElderlyEntities">
+    <EntitySetMapping Name="ArrangedRequests">
+      <EntityTypeMapping TypeName="HelpForElderlyModel.ArrangedRequests">
+        <MappingFragment StoreEntitySet="ArrangedRequests">
+          <ScalarProperty Name="IdArrangedRequests" ColumnName="IdArrangedRequests" />
+          <ScalarProperty Name="IdRequest" ColumnName="IdRequest" />
+          <ScalarProperty Name="IdVolunteer" ColumnName="IdVolunteer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AskingForHelp">
+      <EntityTypeMapping TypeName="HelpForElderlyModel.AskingForHelp">
+        <MappingFragment StoreEntitySet="AskingForHelp">
+          <ScalarProperty Name="IdAskingForHelp" ColumnName="IdAskingForHelp" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Adress" ColumnName="Adress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Requests">
+      <EntityTypeMapping TypeName="HelpForElderlyModel.Requests">
+        <MappingFragment StoreEntitySet="Requests">
+          <ScalarProperty Name="IdRequest" ColumnName="IdRequest" />
+          <ScalarProperty Name="IdAskingForHelp" ColumnName="IdAskingForHelp" />
+          <ScalarProperty Name="RequestContent" ColumnName="RequestContent" />
+          <ScalarProperty Name="StatusRequest" ColumnName="StatusRequest" />
+          <ScalarProperty Name="DateRequest" ColumnName="DateRequest" />
+          <ScalarProperty Name="IdService" ColumnName="IdService" />
+          <ScalarProperty Name="NumHours" ColumnName="NumHours" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Servic">
+      <EntityTypeMapping TypeName="HelpForElderlyModel.Servic">
+        <MappingFragment StoreEntitySet="Servic">
+          <ScalarProperty Name="IdService" ColumnName="IdService" />
+          <ScalarProperty Name="NameService" ColumnName="NameService" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiceVolunteer">
+      <EntityTypeMapping TypeName="HelpForElderlyModel.ServiceVolunteer">
+        <MappingFragment StoreEntitySet="ServiceVolunteer">
+          <ScalarProperty Name="IdServiceVolunteer" ColumnName="IdServiceVolunteer" />
+          <ScalarProperty Name="IdVolunteer" ColumnName="IdVolunteer" />
+          <ScalarProperty Name="IdService" ColumnName="IdService" />
+          <ScalarProperty Name="HoursVolunteerForMonth" ColumnName="HoursVolunteerForMonth" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Volunteer">
+      <EntityTypeMapping TypeName="HelpForElderlyModel.Volunteer">
+        <MappingFragment StoreEntitySet="Volunteer">
+          <ScalarProperty Name="IdVolunteer" ColumnName="IdVolunteer" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="getNextVolunteeringDetails" FunctionName="HelpForElderlyModel.Store.getNextVolunteeringDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HelpForElderlyModel.getNextVolunteeringDetails_Result">
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Adress" ColumnName="Adress" />
+          <ScalarProperty Name="NameService" ColumnName="NameService" />
+          <ScalarProperty Name="RequestContent" ColumnName="RequestContent" />
+          <ScalarProperty Name="DateRequest" ColumnName="DateRequest" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetVolunteerHoursInfo" FunctionName="HelpForElderlyModel.Store.GetVolunteerHoursInfo" />
+    <FunctionImportMapping FunctionImportName="GetVolunteerMonthlyHours" FunctionName="HelpForElderlyModel.Store.GetVolunteerMonthlyHours" />
+    <FunctionImportMapping FunctionImportName="NumVolunteersForThisServiceAndApproved" FunctionName="HelpForElderlyModel.Store.NumVolunteersForThisServiceAndApproved" />
+    <FunctionImportMapping FunctionImportName="VolunteersHaveMostHoursToDonateLeft" FunctionName="HelpForElderlyModel.Store.VolunteersHaveMostHoursToDonateLeft">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HelpForElderlyModel.VolunteersHaveMostHoursToDonateLeft_Result">
+          <ScalarProperty Name="IdVolunteer" ColumnName="IdVolunteer" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

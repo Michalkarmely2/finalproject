@@ -1,0 +1,30 @@
+D:\C#\FinalProject\DTO\bin\Debug\DTO.dll
+D:\C#\FinalProject\DTO\bin\Debug\DTO.pdb
+D:\C#\FinalProject\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\C#\FinalProject\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\C#\FinalProject\DTO\obj\Debug\DTO.dll
+D:\C#\FinalProject\DTO\obj\Debug\DTO.pdb
+M:\מיכל כרמלי\FinalProject\DTO\bin\Debug\DTO.dll.config
+M:\מיכל כרמלי\FinalProject\DTO\bin\Debug\DTO.dll
+M:\מיכל כרמלי\FinalProject\DTO\bin\Debug\DTO.pdb
+M:\מיכל כרמלי\FinalProject\DTO\bin\Debug\EntityFramework.dll
+M:\מיכל כרמלי\FinalProject\DTO\bin\Debug\EntityFramework.SqlServer.dll
+M:\מיכל כרמלי\FinalProject\DTO\bin\Debug\EntityFramework.xml
+M:\מיכל כרמלי\FinalProject\DTO\bin\Debug\EntityFramework.SqlServer.xml
+M:\מיכל כרמלי\FinalProject\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+M:\מיכל כרמלי\FinalProject\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+M:\מיכל כרמלי\FinalProject\DTO\obj\Debug\DTO.csproj.CopyComplete
+M:\מיכל כרמלי\FinalProject\DTO\obj\Debug\DTO.dll
+M:\מיכל כרמלי\FinalProject\DTO\obj\Debug\DTO.pdb
+M:\מיכל כרמלי וצביה אסולין\FinalProject\DTO\bin\Debug\DTO.dll.config
+M:\מיכל כרמלי וצביה אסולין\FinalProject\DTO\bin\Debug\DTO.dll
+M:\מיכל כרמלי וצביה אסולין\FinalProject\DTO\bin\Debug\DTO.pdb
+M:\מיכל כרמלי וצביה אסולין\FinalProject\DTO\bin\Debug\EntityFramework.dll
+M:\מיכל כרמלי וצביה אסולין\FinalProject\DTO\bin\Debug\EntityFramework.SqlServer.dll
+M:\מיכל כרמלי וצביה אסולין\FinalProject\DTO\bin\Debug\EntityFramework.xml
+M:\מיכל כרמלי וצביה אסולין\FinalProject\DTO\bin\Debug\EntityFramework.SqlServer.xml
+M:\מיכל כרמלי וצביה אסולין\FinalProject\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+M:\מיכל כרמלי וצביה אסולין\FinalProject\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+M:\מיכל כרמלי וצביה אסולין\FinalProject\DTO\obj\Debug\DTO.csproj.CopyComplete
+M:\מיכל כרמלי וצביה אסולין\FinalProject\DTO\obj\Debug\DTO.dll
+M:\מיכל כרמלי וצביה אסולין\FinalProject\DTO\obj\Debug\DTO.pdb
