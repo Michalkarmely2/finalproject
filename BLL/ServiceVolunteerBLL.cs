@@ -73,7 +73,7 @@ namespace BLL
             return grouped;
         }
         //2
-        public List<VolunteerDTO> VolunteersHaveMostHoursToDonateLeft(int idS)
+        public List<VolunteersHaveMostHoursToDonateLeft_Result> VolunteersHaveMostHoursToDonateLeft(int idS)
         {
             return CONVERTER.VolunteerConverter.toDTO( serviceVolunteerDAL.VolunteersHaveMostHoursToDonateLeft(idS));
         }

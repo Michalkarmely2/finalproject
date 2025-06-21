@@ -57,28 +57,24 @@ namespace GUI
         //2
         public void mostHoursBtn_Click(object sender, EventArgs e)
         {
-            if (int.TryParse(txtId.Text.Trim(), out int id))
-            {
+           
                 try
                 {
-                    List<VolunteerDTO> l = serviceVolunteerBLL.VolunteersHaveMostHoursToDonateLeft(id);
+                int id=int.Parse(txtId2.Text.Trim());
+                List<VolunteerDTO> l = serviceVolunteerBLL.VolunteersHaveMostHoursToDonateLeft(id);
                     ex7.DataSource = l.Select(f => new { f.FullName, f.IdVolunteer, f.Phone });
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error: " + ex.Message);
                 }
-            }
-            else
-            {
-                MessageBox.Show("Please enter a valid id(int id)");
-            }
+          
 
         }
         //3
         public void ex3Btn_Click(object sender, EventArgs e)
         {
-            if (int.TryParse(txtIdService.Text.Trim(), out int id))
+            if (int.TryParse(txtId2.Text.Trim(), out int id))
             {
                 try
                 {
@@ -99,7 +95,7 @@ namespace GUI
         //4
         public void Ex4Btn_Click(object sender, EventArgs e)
         {
-            if (int.TryParse(txtIdService.Text.Trim(), out int idService))
+            if (int.TryParse(txtId2.Text.Trim(), out int idService))
             {
                 try
                 {
@@ -127,7 +123,7 @@ namespace GUI
         //5
         public void ex5btn_Click(object sender, EventArgs e)
         {
-            string id=txtIdService.Text.Trim();
+            string id=txtId2.Text.Trim();
             if (string.IsNullOrWhiteSpace(id) || id.Length != 9)
             {
                 MessageBox.Show("שגיאה", "אנא הזיני תעודת זהות תקינה - 9 ספרות");

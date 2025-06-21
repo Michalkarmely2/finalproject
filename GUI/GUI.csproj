@@ -53,11 +53,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Volunteer.cs">
+    <Compile Include="VolunteerGUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Volunteer.Designer.cs">
-      <DependentUpon>Volunteer.cs</DependentUpon>
+    <Compile Include="VolunteerGUI.Designer.cs">
+      <DependentUpon>VolunteerGUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,8 +70,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Volunteer.resx">
-      <DependentUpon>Volunteer.cs</DependentUpon>
+    <EmbeddedResource Include="VolunteerGUI.resx">
+      <DependentUpon>VolunteerGUI.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

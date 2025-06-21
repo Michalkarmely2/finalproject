@@ -42,3 +42,18 @@ M:\מיכל כרמלי וצביה אסולין\FinalProject\DAL\obj\Debug\DAL.cs
 M:\מיכל כרמלי וצביה אסולין\FinalProject\DAL\obj\Debug\DAL.csproj.CopyComplete
 M:\מיכל כרמלי וצביה אסולין\FinalProject\DAL\obj\Debug\DAL.dll
 M:\מיכל כרמלי וצביה אסולין\FinalProject\DAL\obj\Debug\DAL.pdb
+C:\Users\danie\OneDrive\Desktop\finalproject\DAL\bin\Debug\DAL.dll.config
+C:\Users\danie\OneDrive\Desktop\finalproject\DAL\bin\Debug\DAL.dll
+C:\Users\danie\OneDrive\Desktop\finalproject\DAL\bin\Debug\DAL.pdb
+C:\Users\danie\OneDrive\Desktop\finalproject\DAL\bin\Debug\DTO.dll
+C:\Users\danie\OneDrive\Desktop\finalproject\DAL\bin\Debug\EntityFramework.dll
+C:\Users\danie\OneDrive\Desktop\finalproject\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\danie\OneDrive\Desktop\finalproject\DAL\bin\Debug\DTO.pdb
+C:\Users\danie\OneDrive\Desktop\finalproject\DAL\bin\Debug\DTO.dll.config
+C:\Users\danie\OneDrive\Desktop\finalproject\DAL\bin\Debug\EntityFramework.xml
+C:\Users\danie\OneDrive\Desktop\finalproject\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\danie\OneDrive\Desktop\finalproject\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\danie\OneDrive\Desktop\finalproject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\danie\OneDrive\Desktop\finalproject\DAL\obj\Debug\DAL.csproj.Up2Date
+C:\Users\danie\OneDrive\Desktop\finalproject\DAL\obj\Debug\DAL.dll
+C:\Users\danie\OneDrive\Desktop\finalproject\DAL\obj\Debug\DAL.pdb

@@ -510,6 +510,21 @@
       </DesignerInfoPropertySet>
     </Options>
     <!-- Diagram content (shape and connector positions) -->
-    <Diagrams></Diagrams>
+    <Diagrams>
+      <Diagram DiagramId="e066f389f905428f87b4b0e0867f5dbf" Name="Diagram1">
+        <EntityTypeShape EntityType="HelpForElderlyModel.ArrangedRequests" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HelpForElderlyModel.AskingForHelp" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HelpForElderlyModel.Requests" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HelpForElderlyModel.Servic" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HelpForElderlyModel.ServiceVolunteer" Width="1.5" PointX="6" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HelpForElderlyModel.Volunteer" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <AssociationConnector Association="HelpForElderlyModel.FK__ArrangedR__IdReq__5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="HelpForElderlyModel.FK__ArrangedR__IdVol__5535A963" ManuallyRouted="false" />
+        <AssociationConnector Association="HelpForElderlyModel.FK__Requests__IdAski__3C34F16F" ManuallyRouted="false" />
+        <AssociationConnector Association="HelpForElderlyModel.FK__Requests__IdServ__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="HelpForElderlyModel.FK__ServiceVo__IdSer__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="HelpForElderlyModel.FK__ServiceVo__IdVol__398D8EEE" ManuallyRouted="false" />
+      </Diagram>
+    </Diagrams>
   </Designer>
 </edmx:Edmx>

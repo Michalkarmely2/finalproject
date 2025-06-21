@@ -15,20 +15,14 @@ namespace DAL
         {
             return db.ArrangedRequests.ToList();
         }
-            //2
-            public  List<Volunteer> VolunteersHaveMostHoursToDonateLeft(int idS)
-            {
+        //2
+        public List<VolunteersHaveMostHoursToDonateLeft_Result> VolunteersHaveMostHoursToDonateLeft(int idS)
+        {
 
-                var id = new SqlParameter
-                {
-                    ParameterName = "@id",
-                    SqlDbType = System.Data.SqlDbType.Int,
-                    Size = 9,
-                    Value = idS
-                };
-               return db.Database.SqlQuery<Volunteer>("EXEC VolunteersHaveMostHoursToDonateLeft(@id)", id).ToList();
 
-            }
+            return db.VolunteersHaveMostHoursToDonateLeft(idS).ToList();
+
+        }
 
 
     }

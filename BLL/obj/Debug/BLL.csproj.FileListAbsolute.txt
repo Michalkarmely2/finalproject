@@ -48,3 +48,21 @@ M:\מיכל כרמלי וצביה אסולין\FinalProject\BLL\obj\Debug\BLL.cs
 M:\מיכל כרמלי וצביה אסולין\FinalProject\BLL\obj\Debug\BLL.csproj.CopyComplete
 M:\מיכל כרמלי וצביה אסולין\FinalProject\BLL\obj\Debug\BLL.dll
 M:\מיכל כרמלי וצביה אסולין\FinalProject\BLL\obj\Debug\BLL.pdb
+C:\Users\danie\OneDrive\Desktop\finalproject\BLL\bin\Debug\BLL.dll.config
+C:\Users\danie\OneDrive\Desktop\finalproject\BLL\bin\Debug\BLL.dll
+C:\Users\danie\OneDrive\Desktop\finalproject\BLL\bin\Debug\BLL.pdb
+C:\Users\danie\OneDrive\Desktop\finalproject\BLL\bin\Debug\DAL.dll
+C:\Users\danie\OneDrive\Desktop\finalproject\BLL\bin\Debug\DTO.dll
+C:\Users\danie\OneDrive\Desktop\finalproject\BLL\bin\Debug\EntityFramework.dll
+C:\Users\danie\OneDrive\Desktop\finalproject\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\danie\OneDrive\Desktop\finalproject\BLL\bin\Debug\DAL.pdb
+C:\Users\danie\OneDrive\Desktop\finalproject\BLL\bin\Debug\DAL.dll.config
+C:\Users\danie\OneDrive\Desktop\finalproject\BLL\bin\Debug\DTO.pdb
+C:\Users\danie\OneDrive\Desktop\finalproject\BLL\bin\Debug\DTO.dll.config
+C:\Users\danie\OneDrive\Desktop\finalproject\BLL\bin\Debug\EntityFramework.xml
+C:\Users\danie\OneDrive\Desktop\finalproject\BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\danie\OneDrive\Desktop\finalproject\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\danie\OneDrive\Desktop\finalproject\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\danie\OneDrive\Desktop\finalproject\BLL\obj\Debug\BLL.csproj.Up2Date
+C:\Users\danie\OneDrive\Desktop\finalproject\BLL\obj\Debug\BLL.dll
+C:\Users\danie\OneDrive\Desktop\finalproject\BLL\obj\Debug\BLL.pdb
