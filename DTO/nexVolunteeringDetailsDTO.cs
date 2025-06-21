@@ -10,7 +10,7 @@ namespace DTO
     {
         public string FullName { get; set; }
         public string Phone { get; set; }
-        public string Address { get; set; } // תיקנתי את השם Adress ל-Address
+        public string Address { get; set; } 
         public string NameService { get; set; }
         public string RequestContent { get; set; }
         public DateTime DateRequest { get; set; }

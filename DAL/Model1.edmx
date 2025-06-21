@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="HelpForElderlyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="HelpForElderlyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="ArrangedRequests">
           <Key>
             <PropertyRef Name="IdArrangedRequests" />
@@ -31,14 +31,14 @@
           <Property Name="RequestContent" Type="nvarchar" MaxLength="50" />
           <Property Name="StatusRequest" Type="nvarchar" MaxLength="10" Nullable="false" />
           <Property Name="DateRequest" Type="date" Nullable="false" />
-          <Property Name="IdService" Type="nchar" MaxLength="9" Nullable="false" />
+          <Property Name="IdService" Type="int" Nullable="false" />
           <Property Name="NumHours" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Servic">
           <Key>
             <PropertyRef Name="IdService" />
           </Key>
-          <Property Name="IdService" Type="nchar" MaxLength="9" Nullable="false" />
+          <Property Name="IdService" Type="int" Nullable="false" />
           <Property Name="NameService" Type="nvarchar" MaxLength="20" />
         </EntityType>
         <EntityType Name="ServiceVolunteer">
@@ -47,7 +47,7 @@
           </Key>
           <Property Name="IdServiceVolunteer" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="IdVolunteer" Type="nchar" MaxLength="9" Nullable="false" />
-          <Property Name="IdService" Type="nchar" MaxLength="9" Nullable="false" />
+          <Property Name="IdService" Type="int" Nullable="false" />
           <Property Name="HoursVolunteerForMonth" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Volunteer">
@@ -94,7 +94,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Requests__IdServ__5070F446">
+        <Association Name="FK__Requests__IdServ__7849DB76">
           <End Role="Servic" Type="Self.Servic" Multiplicity="1" />
           <End Role="Requests" Type="Self.Requests" Multiplicity="*" />
           <ReferentialConstraint>
@@ -106,7 +106,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ServiceVo__IdSer__38996AB5">
+        <Association Name="FK__ServiceVo__IdSer__793DFFAF">
           <End Role="Servic" Type="Self.Servic" Multiplicity="1" />
           <End Role="ServiceVolunteer" Type="Self.ServiceVolunteer" Multiplicity="*" />
           <ReferentialConstraint>
@@ -179,11 +179,11 @@
             <End Role="AskingForHelp" EntitySet="AskingForHelp" />
             <End Role="Requests" EntitySet="Requests" />
           </AssociationSet>
-          <AssociationSet Name="FK__Requests__IdServ__5070F446" Association="Self.FK__Requests__IdServ__5070F446">
+          <AssociationSet Name="FK__Requests__IdServ__7849DB76" Association="Self.FK__Requests__IdServ__7849DB76">
             <End Role="Servic" EntitySet="Servic" />
             <End Role="Requests" EntitySet="Requests" />
           </AssociationSet>
-          <AssociationSet Name="FK__ServiceVo__IdSer__38996AB5" Association="Self.FK__ServiceVo__IdSer__38996AB5">
+          <AssociationSet Name="FK__ServiceVo__IdSer__793DFFAF" Association="Self.FK__ServiceVo__IdSer__793DFFAF">
             <End Role="Servic" EntitySet="Servic" />
             <End Role="ServiceVolunteer" EntitySet="ServiceVolunteer" />
           </AssociationSet>
@@ -192,8 +192,7 @@
             <End Role="ServiceVolunteer" EntitySet="ServiceVolunteer" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="HelpForElderlyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -226,7 +225,7 @@
           <Property Name="RequestContent" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="StatusRequest" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="DateRequest" Type="DateTime" Nullable="false" Precision="0" />
-          <Property Name="IdService" Type="String" MaxLength="9" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="IdService" Type="String" Nullable="false" />
           <Property Name="NumHours" Type="Int32" Nullable="false" />
           <NavigationProperty Name="ArrangedRequests" Relationship="Self.FK__ArrangedR__IdReq__5441852A" FromRole="Requests" ToRole="ArrangedRequests" />
           <NavigationProperty Name="AskingForHelp" Relationship="Self.FK__Requests__IdAski__3C34F16F" FromRole="Requests" ToRole="AskingForHelp" />
@@ -236,7 +235,7 @@
           <Key>
             <PropertyRef Name="IdService" />
           </Key>
-          <Property Name="IdService" Type="String" MaxLength="9" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="IdService" Type="String" Nullable="false" />
           <Property Name="NameService" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Requests" Relationship="Self.FK__Requests__IdServ__5070F446" FromRole="Servic" ToRole="Requests" />
           <NavigationProperty Name="ServiceVolunteer" Relationship="Self.FK__ServiceVo__IdSer__38996AB5" FromRole="Servic" ToRole="ServiceVolunteer" />
@@ -247,7 +246,7 @@
           </Key>
           <Property Name="IdServiceVolunteer" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="IdVolunteer" Type="String" MaxLength="9" FixedLength="true" Unicode="true" Nullable="false" />
-          <Property Name="IdService" Type="String" MaxLength="9" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="IdService" Type="String" Nullable="false" />
           <Property Name="HoursVolunteerForMonth" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Servic" Relationship="Self.FK__ServiceVo__IdSer__38996AB5" FromRole="ServiceVolunteer" ToRole="Servic" />
           <NavigationProperty Name="Volunteer" Relationship="Self.FK__ServiceVo__IdVol__398D8EEE" FromRole="ServiceVolunteer" ToRole="Volunteer" />
@@ -366,7 +365,7 @@
             <End Role="ServiceVolunteer" EntitySet="ServiceVolunteer" />
           </AssociationSet>
           <FunctionImport Name="getNextVolunteeringDetails" ReturnType="Collection(HelpForElderlyModel.getNextVolunteeringDetails_Result)">
-            <Parameter Name="id" Mode="In" Type="String" />
+          <Parameter Name="id" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetVolunteerHoursInfo">
             <Parameter Name="IdVolunteer" Mode="In" Type="String" />
@@ -384,7 +383,7 @@
             <Parameter Name="ApprovedRequestsCount" Mode="InOut" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="VolunteersHaveMostHoursToDonateLeft" ReturnType="Collection(HelpForElderlyModel.VolunteersHaveMostHoursToDonateLeft_Result)">
-            <Parameter Name="IdService" Mode="In" Type="Int32" />
+          <Parameter Name="IdService" Mode="In" Type="Int32" />
           </FunctionImport>
         </EntityContainer>
         <ComplexType Name="getNextVolunteeringDetails_Result">

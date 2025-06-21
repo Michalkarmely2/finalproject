@@ -16,7 +16,7 @@ namespace DAL
     {
         public int IdServiceVolunteer { get; set; }
         public string IdVolunteer { get; set; }
-        public int IdService { get; set; }
+        public string IdService { get; set; }
         public int HoursVolunteerForMonth { get; set; }
     
         public virtual Servic Servic { get; set; }

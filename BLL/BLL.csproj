@@ -58,6 +58,7 @@
     <Compile Include="CONVERTER\ServiceVolunteerConverter.cs" />
     <Compile Include="CONVERTER\ServicConverter.cs" />
     <Compile Include="CONVERTER\VolunteerConverter.cs" />
+    <Compile Include="CONVERTER\VolunteersHaveMostHoursToDonateLeftConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RequestsBLL.cs" />
     <Compile Include="ServicBLL.cs" />

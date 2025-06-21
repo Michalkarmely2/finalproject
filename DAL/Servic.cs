@@ -21,7 +21,7 @@ namespace DAL
             this.ServiceVolunteer = new HashSet<ServiceVolunteer>();
         }
     
-        public int IdService { get; set; }
+        public string IdService { get; set; }
         public string NameService { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
