@@ -24,3 +24,5 @@ yarn-error.log*
 /.vs
 
 .confing
+**/bin/
+**/obj/
