@@ -60,38 +60,43 @@ print @res2
 --צרי פונקצייה שתקבל קוד שירות ותחזיר האם יש מספיק שעות שנתרמו
 --האם מספר השעות שנתרמו בחודש גדול מהממוצע שעות שמבקשים- 
 --בחודש.
-use [M:\מיכל כרמלי וצביה אסולין\FINALPROJECT\HELPFORELDERLY.MDF] 
---לשאול את המורה
-create function EnoughHoursDonated (@idService int)
-returns bit 
+use [C:\Users\User\Desktop\FinalProject\HELPFORELDERLY.MDF] 
+create function EnoughHoursDonated(@IdService int)
+returns bit
 as begin
-declare @thisMonth float
-declare @avgMonth float
---somme pour ce mois
-select @thisMonth=sum(sv.HoursVolunteerForMonth) 
-from ServiceVolunteer sv join Servic s 
-on sv.IdService=s.IdService
-join Requests r on s.IdService=r.IdService
-where r.IdService=@idService
-and MONTH(r.DateRequest)=MONTH(GETDATE())
-and YEAR(r.DateRequest)=YEAR(GETDATE())
-and r.StatusRequest='confirmed'
+declare @TotalHoursThisMonth int
+declare @TotalHoursAllTime int
+declare @FirstDate date
+declare @MonthsActive int
+declare @AverageMonthlyHours float
+-- ממוצע לחודש זה 
+select @TotalHoursThisMonth = SUM(r.NumHours)
+from Requests r
+join ArrangedRequests ar on r.IdRequest = ar.IdRequest
+where r.IdService = @IdService
+and r.StatusRequest = 'confirmed'
+and MONTH(r.DateRequest) = MONTH(GETDATE())
+and YEAR(r.DateRequest) = YEAR(GETDATE())
+-- סך השעות מתמיד
+select @TotalHoursAllTime = SUM(r.NumHours)
+from Requests r
+join ArrangedRequests ar on r.IdRequest = ar.IdRequest
+where r.IdService = @IdService
+and r.StatusRequest = 'confirmed'
+-- תאריך של הביקוש הראשון לסרביס הזה
+select @FirstDate = MIN(DateRequest)
+from Requests
+where IdService = @IdService
+-- חשבון מס החודשים
+select @MonthsActive = DATEDIFF(MONTH, @FirstDate, GETDATE()) + 1
+-- avg
+select @AverageMonthlyHours = @TotalHoursAllTime/@MonthsActive
 
---moyenne pour ce mois
-select @avgMonth=AVG(NumHours) from Requests
-where IdService=@idService
-and MONTH(DateRequest)=MONTH(GETDATE())
-and YEAR(DateRequest)=YEAR(GETDATE())
-
---comparaison
-if @thisMonth>=@avgMonth
-return 1
-
-return 0
-
+if @TotalHoursThisMonth > @AverageMonthlyHours
+        return 1
+    else
+        return 0
 end
-
-
 print(dbo.EnoughHoursDonated(5))
 
 
