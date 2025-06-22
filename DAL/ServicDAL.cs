@@ -30,12 +30,12 @@ namespace DAL
         {
             var idS = new SqlParameter
             {
-                ParameterName = "@id",
+                ParameterName = "@idVolunteer",
                 SqlDbType = System.Data.SqlDbType.Int,
                 Value = id,
             };
 
-            var result = db.Database.SqlQuery<int>("SELECT dbo.MonthlyHoursRemaining(@id)", idS).FirstOrDefault();
+            var result = db.Database.SqlQuery<int>("SELECT dbo.MonthlyHoursRemaining(@idVolunteer)", idS).FirstOrDefault();
 
             return result;
         }
@@ -45,7 +45,7 @@ namespace DAL
         {
             var idS = new SqlParameter
             {
-                ParameterName = "@id",
+                ParameterName = "@idService",
                 SqlDbType = System.Data.SqlDbType.Int,
                 Value = id,
             };
@@ -62,7 +62,7 @@ namespace DAL
                 Direction = System.Data.ParameterDirection.Output,
             };
 
-           db.Database.SqlQuery<object>("EXEC NumVolunteersForThisServiceAndApproved @id, @VolunteersCount OUTPUT, @ApprovedRequestsCount OUTPUT", idS, VolCnt, ApprovedRequestsCnt).ToList();
+           db.Database.SqlQuery<object>("EXEC NumVolunteersForThisServiceAndApproved @idService, @VolunteersCount OUTPUT, @ApprovedRequestsCount OUTPUT", idS, VolCnt, ApprovedRequestsCnt).ToList();
             volCount =Convert.ToInt32( VolCnt.Value);
             approvedRequestsCount = Convert.ToInt32(ApprovedRequestsCnt.Value);
         }
@@ -72,12 +72,12 @@ namespace DAL
         {
             var idService = new SqlParameter
             {
-                ParameterName = "@idS",
+                ParameterName = "@IdService",
                 SqlDbType = System.Data.SqlDbType.Int,
                 Value = idS,
             };
 
-            var result = db.Database.SqlQuery<bool>("SELECT dbo.EnoughHoursDonated(@idS)", idService).FirstOrDefault();
+            var result = db.Database.SqlQuery<bool>("SELECT dbo.EnoughHoursDonated(@IdService)", idService).FirstOrDefault();
 
             return result;
         }

@@ -17,14 +17,7 @@ namespace DAL
         //6
         public List<getNextVolunteeringDetails_Result> getNextVolunteeringDetails(string id)
         {
-            var idV = new SqlParameter
-            {
-                ParameterName = "@id",
-                SqlDbType = System.Data.SqlDbType.NChar,
-                Size = 9,
-                Value = id
-            };
-           return db.Database.SqlQuery<List<getNextVolunteeringDetails_Result>>("EXEC getNextVolunteeringDetails(@idVolunteer)", idV).FirstOrDefault();
+            return db.getNextVolunteeringDetails(id).ToList();
 
         }
 

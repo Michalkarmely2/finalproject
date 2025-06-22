@@ -21,7 +21,7 @@ namespace DAL
         {
             var idV = new SqlParameter
             {
-                ParameterName = "@id",
+                ParameterName = "@IdVolunteer",
                 SqlDbType = SqlDbType.NChar,
                 Size = 9,
                 Value = id
@@ -42,7 +42,7 @@ namespace DAL
             };
 
             db.Database.ExecuteSqlCommand(
-                "EXEC GetVolunteerHoursInfo @id, @HoursThisMonth OUTPUT, @AverageLastMonth OUTPUT",
+                "EXEC GetVolunteerHoursInfo @IdVolunteer, @HoursThisMonth OUTPUT, @AverageLastMonth OUTPUT",
                 idV, HoursThisMonthf, AverageLastMonthf);
 
             hoursthismonth = Convert.ToInt32(HoursThisMonthf.Value);

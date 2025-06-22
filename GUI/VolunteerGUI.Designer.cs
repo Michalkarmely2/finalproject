@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class VolunteerGUI
+    partial class Volunteer
     {
         /// <summary>
         /// Required designer variable.
@@ -30,37 +30,39 @@
         {
             this.ex7 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtIdEx1 = new System.Windows.Forms.TextBox();
             this.ChechHoursBtn = new System.Windows.Forms.Button();
-            this.resteHourslbl = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtId2 = new System.Windows.Forms.TextBox();
             this.mostHoursBtn = new System.Windows.Forms.Button();
-            this.mostResteHourslbl = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.IdServiceTxt = new System.Windows.Forms.TextBox();
+            this.txtIdServiceEx3 = new System.Windows.Forms.TextBox();
             this.ex3Btn = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtIdS = new System.Windows.Forms.TextBox();
+            this.txtIdServiceEx4 = new System.Windows.Forms.TextBox();
             this.Ex4Btn = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.ex5txt = new System.Windows.Forms.TextBox();
+            this.txtEx5 = new System.Windows.Forms.TextBox();
             this.ex5btn = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtEx6 = new System.Windows.Forms.TextBox();
             this.ex6btn = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtIdEx7 = new System.Windows.Forms.TextBox();
+            this.btn_getVolunteersHoursInfo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ex7)).BeginInit();
             this.SuspendLayout();
             // 
             // ex7
             // 
             this.ex7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ex7.Location = new System.Drawing.Point(38, 1027);
+            this.ex7.Location = new System.Drawing.Point(174, 386);
             this.ex7.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.ex7.Name = "ex7";
             this.ex7.RowHeadersWidth = 123;
-            this.ex7.Size = new System.Drawing.Size(405, 185);
+            this.ex7.Size = new System.Drawing.Size(607, 281);
             this.ex7.TabIndex = 0;
+            this.ex7.Visible = false;
             // 
             // label1
             // 
@@ -72,13 +74,13 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "הכנס ID כדי לדעת כמה שעות נותרו לך החודש";
             // 
-            // txtId
+            // txtIdEx1
             // 
-            this.txtId.Location = new System.Drawing.Point(1175, 134);
-            this.txtId.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(298, 44);
-            this.txtId.TabIndex = 2;
+            this.txtIdEx1.Location = new System.Drawing.Point(1175, 134);
+            this.txtIdEx1.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtIdEx1.Name = "txtIdEx1";
+            this.txtIdEx1.Size = new System.Drawing.Size(298, 44);
+            this.txtIdEx1.TabIndex = 2;
             // 
             // ChechHoursBtn
             // 
@@ -90,16 +92,6 @@
             this.ChechHoursBtn.Text = "OK";
             this.ChechHoursBtn.UseVisualStyleBackColor = true;
             this.ChechHoursBtn.Click += new System.EventHandler(this.ChechHoursBtn_Click);
-            // 
-            // resteHourslbl
-            // 
-            this.resteHourslbl.AutoSize = true;
-            this.resteHourslbl.Location = new System.Drawing.Point(545, 142);
-            this.resteHourslbl.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.resteHourslbl.Name = "resteHourslbl";
-            this.resteHourslbl.Size = new System.Drawing.Size(165, 37);
-            this.resteHourslbl.TabIndex = 4;
-            this.resteHourslbl.Text = "שעות שנותרו";
             // 
             // label2
             // 
@@ -130,16 +122,6 @@
             this.mostHoursBtn.UseVisualStyleBackColor = true;
             this.mostHoursBtn.Click += new System.EventHandler(this.mostHoursBtn_Click);
             // 
-            // mostResteHourslbl
-            // 
-            this.mostResteHourslbl.AutoSize = true;
-            this.mostResteHourslbl.Location = new System.Drawing.Point(314, 239);
-            this.mostResteHourslbl.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.mostResteHourslbl.Name = "mostResteHourslbl";
-            this.mostResteHourslbl.Size = new System.Drawing.Size(340, 37);
-            this.mostResteHourslbl.TabIndex = 8;
-            this.mostResteHourslbl.Text = "למי נשאר הכח הרבה שעות?";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -150,13 +132,13 @@
             this.label3.TabIndex = 9;
             this.label3.Text = " כמה אושרו בשירות דה השנה וכמה יש מתנדבים בשירות זה ";
             // 
-            // IdServiceTxt
+            // txtIdServiceEx3
             // 
-            this.IdServiceTxt.Location = new System.Drawing.Point(1175, 347);
-            this.IdServiceTxt.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.IdServiceTxt.Name = "IdServiceTxt";
-            this.IdServiceTxt.Size = new System.Drawing.Size(298, 44);
-            this.IdServiceTxt.TabIndex = 10;
+            this.txtIdServiceEx3.Location = new System.Drawing.Point(1175, 347);
+            this.txtIdServiceEx3.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtIdServiceEx3.Name = "txtIdServiceEx3";
+            this.txtIdServiceEx3.Size = new System.Drawing.Size(298, 44);
+            this.txtIdServiceEx3.TabIndex = 10;
             // 
             // ex3Btn
             // 
@@ -179,13 +161,13 @@
             this.label4.TabIndex = 12;
             this.label4.Text = "האם מספיק שעות נתרמו החודש:הכנס קוד שירות?";
             // 
-            // txtIdS
+            // txtIdServiceEx4
             // 
-            this.txtIdS.Location = new System.Drawing.Point(1175, 458);
-            this.txtIdS.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.txtIdS.Name = "txtIdS";
-            this.txtIdS.Size = new System.Drawing.Size(298, 44);
-            this.txtIdS.TabIndex = 13;
+            this.txtIdServiceEx4.Location = new System.Drawing.Point(1175, 458);
+            this.txtIdServiceEx4.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtIdServiceEx4.Name = "txtIdServiceEx4";
+            this.txtIdServiceEx4.Size = new System.Drawing.Size(298, 44);
+            this.txtIdServiceEx4.TabIndex = 13;
             // 
             // Ex4Btn
             // 
@@ -208,13 +190,13 @@
             this.label5.TabIndex = 15;
             this.label5.Text = "כמה שירותים מתנדב מסויים נותן?";
             // 
-            // ex5txt
+            // txtEx5
             // 
-            this.ex5txt.Location = new System.Drawing.Point(1175, 583);
-            this.ex5txt.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.ex5txt.Name = "ex5txt";
-            this.ex5txt.Size = new System.Drawing.Size(298, 44);
-            this.ex5txt.TabIndex = 16;
+            this.txtEx5.Location = new System.Drawing.Point(1175, 583);
+            this.txtEx5.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtEx5.Name = "txtEx5";
+            this.txtEx5.Size = new System.Drawing.Size(298, 44);
+            this.txtEx5.TabIndex = 16;
             // 
             // ex5btn
             // 
@@ -237,13 +219,13 @@
             this.label6.TabIndex = 18;
             this.label6.Text = "בקשות ממוינות על פי תאריך";
             // 
-            // textBox1
+            // txtEx6
             // 
-            this.textBox1.Location = new System.Drawing.Point(1175, 683);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(298, 44);
-            this.textBox1.TabIndex = 19;
+            this.txtEx6.Location = new System.Drawing.Point(1175, 683);
+            this.txtEx6.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtEx6.Name = "txtEx6";
+            this.txtEx6.Size = new System.Drawing.Size(298, 44);
+            this.txtEx6.TabIndex = 19;
             // 
             // ex6btn
             // 
@@ -256,30 +238,57 @@
             this.ex6btn.UseVisualStyleBackColor = true;
             this.ex6btn.Click += new System.EventHandler(this.ex6btn_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(1597, 827);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(714, 37);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "כמה שעות מתנדב תרם החודש וכמה שעות תרם בחודש שעבר";
+            // 
+            // txtIdEx7
+            // 
+            this.txtIdEx7.Location = new System.Drawing.Point(1187, 811);
+            this.txtIdEx7.Name = "txtIdEx7";
+            this.txtIdEx7.Size = new System.Drawing.Size(298, 44);
+            this.txtIdEx7.TabIndex = 22;
+            // 
+            // btn_getVolunteersHoursInfo
+            // 
+            this.btn_getVolunteersHoursInfo.Location = new System.Drawing.Point(855, 797);
+            this.btn_getVolunteersHoursInfo.Name = "btn_getVolunteersHoursInfo";
+            this.btn_getVolunteersHoursInfo.Size = new System.Drawing.Size(187, 58);
+            this.btn_getVolunteersHoursInfo.TabIndex = 23;
+            this.btn_getVolunteersHoursInfo.Text = "OK";
+            this.btn_getVolunteersHoursInfo.UseVisualStyleBackColor = true;
+            this.btn_getVolunteersHoursInfo.Click += new System.EventHandler(this.btn_getVolunteersHoursInfo_Click);
+            // 
             // Volunteer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2682, 1281);
+            this.Controls.Add(this.btn_getVolunteersHoursInfo);
+            this.Controls.Add(this.txtIdEx7);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.ex6btn);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtEx6);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.ex5btn);
-            this.Controls.Add(this.ex5txt);
+            this.Controls.Add(this.txtEx5);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Ex4Btn);
-            this.Controls.Add(this.txtIdS);
+            this.Controls.Add(this.txtIdServiceEx4);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.ex3Btn);
-            this.Controls.Add(this.IdServiceTxt);
+            this.Controls.Add(this.txtIdServiceEx3);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.mostResteHourslbl);
             this.Controls.Add(this.mostHoursBtn);
             this.Controls.Add(this.txtId2);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.resteHourslbl);
             this.Controls.Add(this.ChechHoursBtn);
-            this.Controls.Add(this.txtId);
+            this.Controls.Add(this.txtIdEx1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ex7);
             this.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
@@ -295,25 +304,26 @@
 
         private System.Windows.Forms.DataGridView ex7;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtIdEx1;
         private System.Windows.Forms.Button ChechHoursBtn;
-        private System.Windows.Forms.Label resteHourslbl;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtId2;
         private System.Windows.Forms.Button mostHoursBtn;
-        private System.Windows.Forms.Label mostResteHourslbl;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox IdServiceTxt;
+        private System.Windows.Forms.TextBox txtIdServiceEx3;
         private System.Windows.Forms.Button ex3Btn;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtIdS;
+        private System.Windows.Forms.TextBox txtIdServiceEx4;
         private System.Windows.Forms.Button Ex4Btn;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox ex5txt;
+        private System.Windows.Forms.TextBox txtEx5;
         private System.Windows.Forms.Button ex5btn;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtEx6;
         private System.Windows.Forms.Button ex6btn;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtIdEx7;
+        private System.Windows.Forms.Button btn_getVolunteersHoursInfo;
     }
 }
 

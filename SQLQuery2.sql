@@ -48,6 +48,7 @@ drop procedure getNextVolunteeringDetails
 --.7 צרי פרוצדורה שתקבל קוד מתנדב ותחזיר כמה שעות תרם החודש, וממוצע 
 --שעות שתרם בחודש האחרון
 
+
 CREATE PROCEDURE GetVolunteerHoursInfo(
     @IdVolunteer NCHAR(9),
     @HoursThisMonth INT OUTPUT,

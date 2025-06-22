@@ -11,10 +11,7 @@ namespace BLL
     public class VolunteerBLL
     {
         VolunteerDAL VolunteerDAL = new VolunteerDAL();
-        public VolunteerDTO getVolunteerByID(string ID)
-        {
-            return CONVERTER.VolunteerConverter.toDTO(VolunteerDAL.getVolunteers().Find(x => x.IdVolunteer == ID));
-        }
+
         //7
         public void GetVolunteerHoursInfo(string id ,out int hoursthismonth, out double averagethismonth)
         {
