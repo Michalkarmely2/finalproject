@@ -190,5 +190,15 @@ namespace GUI
 
 
         }
+
+        private void Volunteer_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ex7_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
