@@ -11,31 +11,22 @@ namespace API.Controllers
     public class RequestsController : ApiController
     {
         RequestsBLL requestsBLL = new RequestsBLL();
-        // GET: api/Requests
-        [Route("api/AskingForHelp/GetOnHoldRequests"), HttpGet]
-        public IHttpActionResult GetOnHoldRequests(string id)
-        {
-            if (string.IsNullOrWhiteSpace(id) || id.Length != 9)
-            {
-                return BadRequest("enter correct id");
-            }
-
-            var result = GetOnHoldRequests(id);
-
-            if (result == null)
-            {
-                return NotFound(); // לא נמצאו בקשות עבור מתנדב זה
-            }
-
-            return Ok(requestsBLL.GetOnHoldRequests(id));
-        }
+    
            
         
         
-        [Route("api/AskingForHelp/GetVolunteersByAddressForNextMonth"), HttpGet]
+        [Route("api/Requests/GetVolunteersByAddressForNextMonth"), HttpGet]
         public IHttpActionResult GetVolunteersByAddressForNextMonth()
         {
-            return Ok(requestsBLL.GetVolunteersByAddressForNextMonth());
+
+            var result = requestsBLL.GetVolunteersByAddressForNextMonth();
+
+            if (result.Count == 0)
+            {
+                return NotFound(); 
+            }
+
+            return Ok(result);
         }
 
     }} 

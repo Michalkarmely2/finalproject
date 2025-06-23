@@ -30,7 +30,10 @@ namespace BLL
                 GroupBy(p=>p.IdAskingForHelp).
                 Select(g => new {Person=g.First(), Count=g.Count()}).
                 OrderByDescending(g => g.Count).FirstOrDefault();//ce qu il trouve en premier de ce que y a (cad qui rep a la condition)
-
+            if (helpedCount == null)
+            {
+                return new List<RequestsDTO>();
+            }
             var targetPerson = helpedCount.Person;
 
             //rend les dmd d un crtn volontaire pour un crtn demandeur d aide

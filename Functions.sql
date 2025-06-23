@@ -60,7 +60,7 @@ print @res2
 --צרי פונקצייה שתקבל קוד שירות ותחזיר האם יש מספיק שעות שנתרמו
 --האם מספר השעות שנתרמו בחודש גדול מהממוצע שעות שמבקשים- 
 --בחודש.
-use [C:\Users\User\Desktop\FinalProject\HELPFORELDERLY.MDF] 
+ 
 create function EnoughHoursDonated(@IdService int)
 returns bit
 as begin

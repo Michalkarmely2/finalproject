@@ -11,11 +11,12 @@ namespace BLL
     public class RequestsBLL
     {
         RequestsDAL RequestsDAL=new RequestsDAL();
-       
+
         public List<RequestsDTO> GetRequests()
         { return CONVERTER.RequestsConverter.toDTO( RequestsDAL.GetRequests()); }
         public List<RequestsDTO> GetOnHoldRequests(string id)
         { return  GetRequests().FindAll(x =>x.IdAskingForHelp==id&& x.StatusRequest.Trim() == "on hold"); }
+
 
         // צרי פונקצייה שתחזיר עבור כול כתובת את רשימת המתנדבים שהולכים 
         //להתנדב בה בחודש הקרוב

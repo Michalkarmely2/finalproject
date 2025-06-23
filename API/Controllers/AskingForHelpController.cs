@@ -14,18 +14,34 @@ namespace API.Controllers
     {
         AskingForHelpBLL askingForHelpBLL=new AskingForHelpBLL();
         // GET: api/AskingForHelp
-        
-        [Route("api/AskingForHelp/getNotConfirmedRequestsForEachAskingForHelp") ,HttpGet]
+       
+        [Route("api/AskingForHelp/getNotConfirmedRequestsForEachAskingForHelp"), HttpGet]
         public IHttpActionResult getNotConfirmedRequestsForEachAskingForHelp()
         {
-            return Ok(askingForHelpBLL.getNotConfirmedRequestsForEachAskingForHelp());
-        } 
+
+            var result = askingForHelpBLL.getNotConfirmedRequestsForEachAskingForHelp();
+
+            if (result.Count == 0)
+            {
+                return NotFound();
+            }
+
+            return Ok(result);
+        }
+
 
 
         [Route("api/AskingForHelp/getAskingForHelpWithMostNotConfirmedRequests") ,HttpGet]
         public IHttpActionResult getAskingForHelpWithMostNotConfirmedRequests()
         {
-            return Ok(askingForHelpBLL.getAskingForHelpWithMostNotConfirmedRequests());
+            var result = askingForHelpBLL.getAskingForHelpWithMostNotConfirmedRequests();
+
+            if (result == null)
+            {
+                return NotFound(); // לא נמצאו בקשות עבור מתנדב זה
+            }
+
+            return Ok(result);
         }
         
 

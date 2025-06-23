@@ -12,17 +12,17 @@ namespace API.Controllers
     {
         ServiceVolunteerBLL serviceVolunteerBLL=new ServiceVolunteerBLL();
 
-        [Route("api/ServiceVolunteer/GetTopPersonRequestsByVolunteer"), HttpGet]
+        [Route("api/ServiceVolunteer/GetTopPersonRequestsByVolunteer/{id}"), HttpGet]
         public IHttpActionResult GetTopPersonRequestsByVolunteer(string id)
         {
-            if (string.IsNullOrWhiteSpace(id)||id.Length!=9)
+            if (id.Length!=9)
             {
                 return BadRequest("Volunteer ID is required.");
             }
 
             var result = serviceVolunteerBLL.GetTopPersonRequestsByVolunteer(id);
 
-            if (result == null)
+            if (result.Count == 0)
             {
                 return NotFound(); // לא נמצאו בקשות עבור מתנדב זה
             }
