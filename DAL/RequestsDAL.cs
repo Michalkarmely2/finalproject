@@ -9,7 +9,7 @@ namespace DAL
 {
     public class RequestsDAL
     {
-        HelpForElderlyEntities db=new HelpForElderlyEntities();
+        HelpForElderlyEntities1 db=new HelpForElderlyEntities1();
         public List<Requests> GetRequests()
         {
            return db.Requests.ToList();

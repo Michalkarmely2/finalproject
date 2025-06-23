@@ -13,8 +13,8 @@ namespace DAL
     
     public partial class VolunteersHaveMostHoursToDonateLeft_Result
     {
-        public string IdVolunteer { get; set; }
         public string FullName { get; set; }
+        public string IdVolunteer { get; set; }
         public string Phone { get; set; }
     }
 }

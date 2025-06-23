@@ -25,7 +25,7 @@ namespace DAL
         public string RequestContent { get; set; }
         public string StatusRequest { get; set; }
         public System.DateTime DateRequest { get; set; }
-        public string IdService { get; set; }
+        public int IdService { get; set; }
         public int NumHours { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -13,7 +13,7 @@ namespace DTO
         public string RequestContent { get; set; }
         public string StatusRequest { get; set; }
         public System.DateTime DateRequest { get; set; }
-        public string IdService { get; set; }
+        public int IdService { get; set; }
         public int NumHours { get; set; }
 
     }

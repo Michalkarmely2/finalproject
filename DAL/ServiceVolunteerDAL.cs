@@ -9,7 +9,7 @@ namespace DAL
 {
     public class ServiceVolunteerDAL
     {
-        HelpForElderlyEntities db = new HelpForElderlyEntities();
+        HelpForElderlyEntities1 db = new HelpForElderlyEntities1();
 
         public List<ArrangedRequests> GetAllArrangedRequestsWithRelations()
         {

@@ -8,7 +8,7 @@ namespace DAL
 {
     public class AskingForHelpDAL
     {
-        HelpForElderlyEntities db=new HelpForElderlyEntities();
+        HelpForElderlyEntities1 db=new HelpForElderlyEntities1();
         public List<AskingForHelp> GetAskingForHelp()
         {
             return db.AskingForHelp.ToList();

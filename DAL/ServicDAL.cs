@@ -9,7 +9,7 @@ namespace DAL
 {
     public class ServicDAL
     {
-        HelpForElderlyEntities db = new HelpForElderlyEntities();
+        HelpForElderlyEntities1 db = new HelpForElderlyEntities1();
         //5
         public int howManyUniqueHelpDoVolunteerGive(string id)
         {

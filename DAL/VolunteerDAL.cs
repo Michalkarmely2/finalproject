@@ -11,7 +11,7 @@ namespace DAL
 {
     public class VolunteerDAL
     {
-        HelpForElderlyEntities db =new HelpForElderlyEntities();
+        HelpForElderlyEntities1 db =new HelpForElderlyEntities1();
         public List<Volunteer> getVolunteers()
         {
             return db.Volunteer.ToList();

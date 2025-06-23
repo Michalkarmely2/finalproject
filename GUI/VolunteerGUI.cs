@@ -49,14 +49,21 @@ namespace GUI
         //2
         public void mostHoursBtn_Click(object sender, EventArgs e)
         {
+            ex7.Visible = !ex7.Visible;
 
-            try {
+            try
+            {
+
 
                 int id = int.Parse(txtId2.Text.Trim());
                 List<VolunteerDTO> l = serviceVolunteerBLL.VolunteersHaveMostHoursToDonateLeft(id);
-                ex7.DataSource = l.Select(f => new { f.FullName, f.IdVolunteer, f.Phone });
+                if (l.Count == 0)
+                {
+                    MessageBox.Show("אין מתנדבים שנותרו להם שעות לתרום.");
+                    return;
+                }
+                ex7.DataSource = l.Select(f => new { f.FullName, f.IdVolunteer, f.Phone }).ToList();
            
-                ex7.Visible = true;
 
             }
             catch (Exception ex)
@@ -156,7 +163,7 @@ namespace GUI
                 else
                 {
                     // Construction du mssage
-                    ex7.DataSource = results.Select(f => new { f.FullName, f.Address,f.NameService, f.Phone , f.RequestContent,f.DateRequest});
+                    ex7.DataSource = results.Select(f => new { f.FullName, f.Address,f.NameService, f.Phone , f.RequestContent,f.DateRequest}).ToList();
                     ex7.Visible = true;
                 }
             }

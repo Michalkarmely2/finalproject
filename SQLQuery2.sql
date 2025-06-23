@@ -3,7 +3,7 @@
 --שנותנים כזה שירות
 
 create function howManyUniqueHelpDoVolunteerGive(@id nchar(9))
-RETURNS nchar(9)
+RETURNS int 
 AS BEGIN
 declare @count int
 select @count = count(*) from ServiceVolunteer s
@@ -15,6 +15,7 @@ and IdService=s.IdService)
 return @count
 
 end
+drop function howManyUniqueHelpDoVolunteerGive
 
 print dbo.howManyUniqueHelpDoVolunteerGive('333333333')
 --.6 צרי פרוצדורה המקבלת קוד מתנדב ושולפת : שם נכה, פלאפון, כתובות, שם 
@@ -43,7 +44,6 @@ EXEC GetVolunteerHoursInfo '444444444', @ThisMonth OUTPUT, @AvgLastMonth OUTPUT;
 print @ThisMonth
 print @AvgLastMonth
 
-drop procedure getNextVolunteeringDetails
 
 --.7 צרי פרוצדורה שתקבל קוד מתנדב ותחזיר כמה שעות תרם החודש, וממוצע 
 --שעות שתרם בחודש האחרון
