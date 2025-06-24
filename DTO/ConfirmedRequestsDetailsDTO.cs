@@ -14,6 +14,8 @@ namespace DTO
         public DateTime DateRequest { get; set; }
         public string requestContent { get; set; }
 
+        public ConfirmedRequestsDetailsDTO() { } 
+
         public ConfirmedRequestsDetailsDTO(string VolunteerName, string AskingForHelpName, DateTime DateRequest, string requestContent)
         {
             this.VolunteerName = VolunteerName;
